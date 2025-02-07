@@ -32,7 +32,7 @@ class auth extends CI_Controller {
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if($this->form_validation->run() == false){
-            $data['title'] = 'Admin login Page';
+            $data['title'] = 'Admin login';
             $this->load->view('auth/header', $data);
             $this->load->view('auth/login');
             $this->load->view('auth/footer');
